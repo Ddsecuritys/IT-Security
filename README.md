@@ -1,5 +1,7 @@
 DDSecurity
 
+NVR Security System V1.0
+
 IT Sulution to help others.
 
 Steps how to use the file 
