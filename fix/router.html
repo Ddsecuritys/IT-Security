@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Router Access</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Access Your Router</h1>
+        <p>Enter your router's IP address to access its settings:</p>
+        <input type="text" id="router-ip" placeholder="192.168.1.1">
+        <button onclick="accessRouter()">Access Router</button>
+    </div>
+
+    <script>
+        function accessRouter() {
+            const ip = document.getElementById('router-ip').value;
+            if (ip) {
+                window.location.href = `http://${ip}`;
+            } else {
+                alert('Please enter a valid IP address.');
+            }
+        }
+    </script>
+</body>
+</html>

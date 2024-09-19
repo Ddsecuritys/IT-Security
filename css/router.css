@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: black;
+    color: lightblue;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+.sidebar {
+    width: 230px;
+    background-color: black;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    transition: transform 0.3s ease;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: lightblue;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: grey;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.post {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .sidebar {
+        transform: translateX(-100%);
+    }
+
+    .sidebar.active {
+        transform: translateX(0);
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+}
+
+.box {
+  width: 200px;
+  float: left;
+  height: 500px;
+  background: #1e1e1e;
+}
+
+.box nav{
+  width: 100%;
+  float: left;
+}
+
+.box nav ul{
+
+}
+
+.box nav ul li{
+  width: 120px;
+  text-align: left;
+  display: block;
+  list-style: none;
+  margin-top: 30px;
+}
+
+.box nav ul li a{
+  text-decoration: none;
+  color: lightblue;
+  font-size: 17px;
+}
+
+
+
+
+.inbox {
+  width: 900px;
+  height: 500px;
+  float: left;
+  margin-left: 10px;
+  background: black;
+}
+
+.inbox::after{
+  content: '';
+  display: flex;
+  clear: none;
+}
+
+.rot{
+  float: left;
+  width: 20%;
+  background: black;
+}
+
+.rot nav{
+  width: 100%;
+  float: left;
+}
+
+.rot nav ul{
+
+}
+
+.rot nav ul li{
+  width: 120px;
+  text-align: left;
+  display: block;
+  list-style: none;
+  margin-top: 30px;
+}
+
+.rot nav ul li a{
+  text-decoration: none;
+  color: lightblue;
+  font-size: 15px;
+}

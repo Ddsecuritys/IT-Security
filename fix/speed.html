@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Internet Speed Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        #speed {
+            font-size: 1.5em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Internet Speed Test</h1>
+        <button onclick="runSpeedTest()">Run Speed Test</button>
+        <p id="speed">Click the button to test your internet speed.</p>
+    </div>
+
+    <script>
+        async function runSpeedTest() {
+            document.getElementById('speed').textContent = 'Testing...';
+
+            try {
+                const response = await fetch('https://api.fast.com/netflix/speedtest/v2');
+                const data = await response.json();
+                const downloadSpeed = data.speeds.download / 1_000_000; // Convert to Mbps
+
+                document.getElementById('speed').textContent = `Download Speed: ${downloadSpeed.toFixed(2)} Mbps`;
+            } catch (error) {
+                document.getElementById('speed').textContent = 'Unable to fetch speed test results.';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: black;
+    color: lightblue;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+.sidebar {
+    width: 230px;
+    background-color: black;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    transition: transform 0.3s ease;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: lightblue;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: grey;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.post {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .sidebar {
+        transform: translateX(-100%);
+    }
+
+    .sidebar.active {
+        transform: translateX(0);
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+}
+
+.pass {
+  float: left;
+  width: 250px;
+  margin-left: 20px;
+  background: black;
+}
+
+.pass label{
+  font-size: 10px;
+  color: lightblue;
+  margin-left: 10px;
+}
+
+.pass input{
+  width: 200px;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.pass button{
+  width: 160px;
+  height: 25px;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: black;
+  color: lightblue;
+  border: solid 1px lightblue;
+  border-radius: 10px;
+}
+
+.error{
+  text-align: center;
+  background: #FA8C99;
+  color: red;
+}
+
+.errorr{
+  text-align: center;
+  background: #FA8C99;
+  color: red;
+}
+
+
+
+.success {
+  text-align: center;
+  background: lightgreen;
+  color: green;
+}
+
+.terror{
+  text-align: center;
+  background: #FA8C99;
+  color: red;
+}
+
+.terrorr{
+  text-align: center;
+  background: #FA8C99;
+  color: red;
+}
+
+
+
+.tsuccess {
+  text-align: center;
+  background: lightgreen;
+  color: green;
+}
