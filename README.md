@@ -12,9 +12,10 @@ IT Sulution to help others.
 
 Steps how to use the file 
 
-* Clone the file
-* Download XAMPP
-* When you download put the files in hdocks
+* Download the file.
+* Extract the file.
+* Download XAMPP.
+* When you download put the files in hdocks.
 * Go to XAMPP (phpmyadmin) and create new database name it (ddsecurity).
 * Then in (ddsecurity) go to import select choose file. Then go to (hdocks/db/table.sql) selcet that file (table.sql). 
 * If Everthing went correct your almost done.
@@ -23,5 +24,6 @@ Steps how to use the file
 * Youll be located to project.
 * Sign up.
 * Login.
+
 
   This will have updates in futter if the project helps please leave us with review or follow us in are (Facebook or linkid) Thank you.
