@@ -8,9 +8,11 @@ Please respect the terms of use.
 
 ## NVR Security System V1.0
 
-IT Sulution to help others.
+IT Sulution to help finding NVR, CCTV, IP Address, Router, Track internet speed etc.
 
-Steps how to use the file 
+This will have updates in futter if the project helps please leave us with review or follow us in are (Facebook or linkid) Thank you.
+
+## How to download NVR Security V 1.0
 
 * Download the file.
 * Extract the file.
@@ -24,6 +26,3 @@ Steps how to use the file
 * Youll be located to project.
 * Sign up.
 * Login.
-
-
-  This will have updates in futter if the project helps please leave us with review or follow us in are (Facebook or linkid) Thank you.
